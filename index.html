@@ -3,24 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Victor Andrade</title>
+
+    <meta name="description" content="main page of my wdd131 website">
+    <meta name="author" content="victor caputo cerillo andrade">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <h1>Place Holder</h1>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
     </header>
 
+    <nav>
+        <a href="https://www.linkedin.com/?lipi=urn%3Ali%3Apage%3Ad_flagship3_login%3B5vgEsaMmSUCF5bTEaa%2FRMA%3D%3D">LinkedIn</a>
+        <a href="https://byupw.instructure.com/">Canvas</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng">Scripture</a>
+        <a href="#">Final Project</a>
+    </nav>
+
     <main>
-        <section class="navigation-bar">
-            <ul>
-                <li><a href="week01/basic-layout.html">Basic Layout</a></li>
-                <li>Place Holder</li>
-                <li>Place Holder</li>
-                <li>Place Holder</li>
-                <li>Place Holder</li>
-            </ul>
+        <h1>Victor C C Andrade</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+
+            <div class="about-me">
+                <p>My name is Victor Andrade, I live in Brazil, and I am a student at BYU-Pathway Worldwide. I am currently
+                    pursuing a degree in Software Development. I like to compose instrumental music, practice archery and hike.
+                    Its a pleasure to be part of this course and I am looking forward to learn more with everyone!
+                </p>
+
+                <img src="images/my-photo.jpg" alt="Photo of Victor Andrade">
+            </div>
+
+            <h3>Brazil</h3>
+
+            <div class="about-brazil">
+                <img src="images/brasil-view.jpg" alt="Brazil Flag">
+
+                <p>Brazil is a country in South America. It is the fifth largest country in the world by both area and
+                population. Brazil is known for its diverse culture, beautiful landscapes, and vibrant cities. The
+                official language is Portuguese, and the country has a rich history influenced by indigenous peoples,
+                European colonization, and African heritage.
+                </p>
+
+                <p>Oficial flag and view of Brazil</p>
+            </div>
         </section>
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+
+            <div class="web-dev-resources">
+                <ul>
+                    <li><a href="https://dev.to/" target="_blank" rel="noopener noreferrer">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener noreferrer">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">Udemy</a></li>
+                    <li><a href="https://picsum.photos/" target="_blank" rel="noopener noreferrer">Lorem Picsum Image Placeholder</a></li>
+                </ul>
+            </div>
+        </section>
+
     </main>
-    
+
+    <footer>
+        <p>©<span id="current-year"></span> ✧ Victor Caputo Cerillo Andrade ✧ Brazil</p>
+        <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
