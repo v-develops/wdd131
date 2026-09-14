@@ -45,7 +45,7 @@ nav {
     align-items: center;
 }
 nav a {
-    color: grey;
+    color: rgb(196, 196, 196);
     text-decoration: none;
     font-size: 1.6rem;  
 
