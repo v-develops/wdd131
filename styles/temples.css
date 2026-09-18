@@ -33,15 +33,15 @@ header span {
     color: white;
 
     cursor: pointer;
+    text-decoration: none;
 }
 #menu::before {
-    content: ☰;
+    content: "☰";
 }
 /* -------------------------------------- */
 .navigation {
     list-style: none;
     margin: 0 auto;
-    max-width: 760px;
 
     background-color: #072e3e;
 }
@@ -71,7 +71,7 @@ nav a:hover {
 }
 
 #menu.show::before {
-    content: X;
+    content: "X";
 }
 /* -------------------------------------- */
 main {
