@@ -1,0 +1,47 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+/* -------------------------------------- */
+header {
+    background-color: rgb(195, 217, 235);
+
+    max-width: 640px;
+    padding: 1rem;
+    border: 1px solid black;
+    margin: 1rem auto
+}
+h1 {
+    text-align: center;
+}
+/* -------------------------------------- */
+main {
+    background-color: rgb(195, 217, 235);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+
+    max-width: 640px;
+    padding: 1rem;
+    border: 1px solid black;
+    margin: 1rem auto
+}
+main h2 {
+    text-align: center;
+}
+main p {
+    text-align: center;
+}
+/* -------------------------------------- */
+footer {
+    background-color: rgb(195, 217, 235);
+
+    max-width: 640px;
+    padding: 1rem;
+    border: 1px solid black;
+    margin: 1rem auto
+}
+footer p {
+    text-align: center;
+}

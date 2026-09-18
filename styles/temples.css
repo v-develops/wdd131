@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Slab", serif;
+    color: #051f2a;
+    background-color: rgb(236, 236, 236);
+}
+/* -------------------------------------- */
+header {
+	background-color: #0b445d;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+header span {
+    color: white;
+    font-size: 2rem;
+}
+/* -------------------------------------- */
+#menu {
+    display: block;
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    color: white;
+
+    cursor: pointer;
+}
+#menu::before {
+    content: ☰;
+}
+/* -------------------------------------- */
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+
+    background-color: #072e3e;
+}
+.navigation li {
+    display: none;
+}
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+nav a:hover {
+    background-color: #fff;
+    color: black;
+
+    text-decoration: underline;
+}
+.active {
+	color: yellow;
+}
+/* -------------------------------------- */
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: X;
+}
+/* -------------------------------------- */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 1.5rem;
+}
+.temple-images {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+figure {
+    background-color: white;
+    margin: 0;
+    
+
+    border-radius: 2rem;
+    box-shadow: 0 10px 10px rgb(130, 130, 130);
+    min-width: 0;
+}
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+
+    padding: 1rem 1rem 0 1rem;
+    margin: 0 auto;
+    padding: 1rem 1rem 0 1rem;
+}
+figcaption {
+    padding: 1rem;
+    text-align: center;
+
+    font-weight: 700;
+}
+
+footer{
+    color: white;
+    background-color: #0b445d;
+    text-align: center;
+
+	padding: 20px;
+    margin-top: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
