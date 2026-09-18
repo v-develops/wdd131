@@ -10,18 +10,18 @@ body {
 }
 /* -------------------------------------- */
 header {
-	background-color: #0b445d;
+	background-color: rgb(11, 68, 93);
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 	padding: 20px;
-	border: 1px solid black;
+	border: 1px solid rgb(0, 0, 0 );
     position: relative;
 }
 header span {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 2rem;
 }
 header nav {
@@ -36,7 +36,7 @@ header nav {
     font-size: 2.5rem;
     background: none;
     border: none;
-    color: white;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     text-decoration: none;
 }
@@ -46,7 +46,7 @@ header nav {
 /* -------------------------------------- */
 .navigation {
     list-style: none;
-    background-color: #072e3e;
+    background-color: rgb(7, 46, 62);
 }
 .navigation li {
     display: none;
@@ -56,20 +56,20 @@ header nav {
 }
 nav a {
 	display: block;
-	color: #fff;
+	color: rgb(255, 255, 255);
 	text-align: center;
 	padding: 1rem;
 	text-decoration: none;
 	font-size: 1.5rem;
 }
 nav a:hover {
-    background-color: #fff;
-    color: black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0 );
 
     text-decoration: underline;
 }
 .active {
-	color: yellow;
+	color: rgb(255, 255, 0);
 }
 /* -------------------------------------- */
 #menu.show::before {
@@ -92,7 +92,7 @@ h1 {
     gap: 1.5rem;
 }
 figure {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: 0;
     
     border-radius: 2rem;
@@ -115,11 +115,11 @@ figcaption {
 }
 
 footer{
-    color: white;
-    background-color: #0b445d;
+    color: rgb(255, 255, 255);
+    background-color: rgb(11, 68, 93);
     text-align: center;
 
 	padding: 20px;
     margin-top: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(0, 0, 0,);
 }
