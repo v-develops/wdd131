@@ -13,6 +13,13 @@
     .navigation a {
         text-align: center;
     }
+    nav {
+    display: flex;
+    }
+    header nav {
+        position: static;
+        width: auto;
+    }
 /* -------------------------------------- */
     #menu {
     display: none;

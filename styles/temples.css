@@ -6,7 +6,6 @@
 
 body {
     font-family: "Roboto Slab", serif;
-    color: #051f2a;
     background-color: rgb(236, 236, 236);
 }
 /* -------------------------------------- */
@@ -18,11 +17,18 @@ header {
     align-items: center;
 
 	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid black;
+    position: relative;
 }
 header span {
     color: white;
     font-size: 2rem;
+}
+header nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
 }
 /* -------------------------------------- */
 #menu {
@@ -31,7 +37,6 @@ header span {
     background: none;
     border: none;
     color: white;
-
     cursor: pointer;
     text-decoration: none;
 }
@@ -41,12 +46,13 @@ header span {
 /* -------------------------------------- */
 .navigation {
     list-style: none;
-    margin: 0 auto;
-
     background-color: #072e3e;
 }
 .navigation li {
     display: none;
+}
+.navigation.show li {
+    display: block;
 }
 nav a {
 	display: block;
@@ -66,10 +72,6 @@ nav a:hover {
 	color: yellow;
 }
 /* -------------------------------------- */
-.show li {
-    display: block;
-}
-
 #menu.show::before {
     content: "X";
 }
@@ -93,7 +95,6 @@ figure {
     background-color: white;
     margin: 0;
     
-
     border-radius: 2rem;
     box-shadow: 0 10px 10px rgb(130, 130, 130);
     min-width: 0;
@@ -106,12 +107,10 @@ figure img {
 
     padding: 1rem 1rem 0 1rem;
     margin: 0 auto;
-    padding: 1rem 1rem 0 1rem;
 }
 figcaption {
     padding: 1rem;
     text-align: center;
-
     font-weight: 700;
 }
 
