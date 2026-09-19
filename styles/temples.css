@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --primary-color: rgb(11, 68, 93);
+    --secondary-color: rgb(7, 46, 62);
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+}
 
 body {
     font-family: "Roboto Slab", serif;
@@ -10,18 +16,18 @@ body {
 }
 /* -------------------------------------- */
 header {
-	background-color: rgb(11, 68, 93);
+	background-color: var(--primary-color);
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 	padding: 20px;
-	border: 1px solid rgb(0, 0, 0 );
+	border: 1px solid var(--black);
     position: relative;
 }
 header span {
-    color: rgb(255, 255, 255);
+    color: var(--white);
     font-size: 2rem;
 }
 header nav {
@@ -36,7 +42,7 @@ header nav {
     font-size: 2.5rem;
     background: none;
     border: none;
-    color: rgb(255, 255, 255);
+    color: var(--white);
     cursor: pointer;
     text-decoration: none;
 }
@@ -46,7 +52,7 @@ header nav {
 /* -------------------------------------- */
 .navigation {
     list-style: none;
-    background-color: rgb(7, 46, 62);
+    background-color: var(--secondary-color);
 }
 .navigation li {
     display: none;
@@ -56,15 +62,15 @@ header nav {
 }
 nav a {
 	display: block;
-	color: rgb(255, 255, 255);
+	color: var(--white);
 	text-align: center;
 	padding: 1rem;
 	text-decoration: none;
 	font-size: 1.5rem;
 }
 nav a:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0 );
+    background-color: var(--white);
+    color: var(--black);
 
     text-decoration: underline;
 }
@@ -92,7 +98,7 @@ h1 {
     gap: 1.5rem;
 }
 figure {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--white);
     margin: 0;
     
     border-radius: 2rem;
@@ -115,11 +121,11 @@ figcaption {
 }
 
 footer{
-    color: rgb(255, 255, 255);
-    background-color: rgb(11, 68, 93);
+    color: var(--white);
+    background-color: var(--primary-color);
     text-align: center;
 
 	padding: 20px;
     margin-top: 20px;
-	border: 1px solid rgba(0, 0, 0);
+	border: 1px solid var(--black);
 }
