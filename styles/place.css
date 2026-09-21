@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+    --primary-color: green;
+    --secondary-color: yellow;
+    --text-color-one: white;
+    --text-color-two: black;
+}
+/* -------------------------------------- */
+header {
+    background-color: var(--primary-color);
+    border-bottom: 4px solid white;
+}
+h1 {
+    text-align: center;
+    color: var(--text-color-one);
+    font-size: 4rem;
+    padding: 2rem;
+}
+/* -------------------------------------- */
+.hero-banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+    border-width: 30px 0 30px 0;
+    border-style: solid;
+    border-color: var(--secondary-color);
+}
+/* -------------------------------------- */
+footer {
+    background-color: var(--primary-color);
+
+    text-align: center;
+    color: var(--text-color-one);
+    font-size: 2rem;
+    padding: 2rem;
+}
