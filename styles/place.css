@@ -10,6 +10,9 @@
     --text-color-two: #000000;
     --info-card-background-color: #ffffffcc;
 }
+body {
+    font-family: "Roboto", sans-serif;
+}
 /* -------------------------------------- */
 header {
     background-color: var(--primary-color);
