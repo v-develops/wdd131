@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Picture Album</title>
+
+    <meta name="description" content="Picture album webpage showing nine photos of temples around the world. It also uses a hamburguer
+    menu to help on smaller screens">
+    <meta name="author" content="victor caputo cerillo andrade">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span>Temple Album</span>
+        <button id="menu" aria-label="Open the navigation menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Temples</h1>
+        <div class="temple-images">
+            <figure>
+                <img src="images/ghana-temple.jpg" width="340" height="215" alt="Accra Ghana Temple" fetchpriority="high">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/australia-temple.jpg" width="340" height="215" alt="Adelaide Australia Temple" loading="lazy" decoding="async">
+                <figcaption>Adelaide Australia Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/albuquerque-temple.jpg" width="340" height="215" alt="Albuquerque New Mexico Temple" loading="lazy" decoding="async">
+                <figcaption>Albuquerque New Mexico Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/samoa-temple.jpg" width="340" height="215" alt="Apia Samoa Temple" loading="lazy" decoding="async">
+                <figcaption>Apia Samoa Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/paraguay-temple.jpeg" width="340" height="215" alt="Asunción Paraguay Temple" loading="lazy" decoding="async">
+                <figcaption>Asunción Paraguay Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/georgia-temple.jpg" width="340" height="215" alt="Atlanta Georgia Temple" loading="lazy" decoding="async">
+                <figcaption>Atlanta Georgia Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/baton-temple.jpeg" width="340" height="215" alt="Baton Rouge Louisiana Temple" loading="lazy" decoding="async">
+                <figcaption>Baton Rouge Louisiana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/switzerland-temple.jpg" width="340" height="215" alt="Bern Switzerland Temple" loading="lazy" decoding="async">
+                <figcaption>Bern Switzerland Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/montana-temple.jpg" width="340" height="215" alt="Billings Montana Temple" loading="lazy" decoding="async">
+                <figcaption>Billings Montana Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>©<span id="current-year"></span> ✧ Victor Caputo Cerillo Andrade ✧ Brazil</p>
+        <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
