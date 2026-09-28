@@ -96,8 +96,13 @@ function displayTemples(templesToBeDisplayed) {
 
         const card = document.createElement("figure");
 
+        const isFirstImage = temple === templesToBeDisplayed[0];
+
         card.innerHTML = `
-            <img src="${temple.imageUrl}" width="340" height="215" alt="${temple.templeName}" loading="lazy" decoding="async">
+            <img src="${temple.imageUrl}" width="340" height="215" alt="${temple.templeName}"
+            loading="${isFirstImage ? "eager" : "lazy"}"
+            fetchpriority="${isFirstImage ? "high" : "auto"}"
+            decoding="async">
 
             <figcaption>
                 <h2>${temple.templeName}</h2>
