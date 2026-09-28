@@ -97,7 +97,7 @@ function displayTemples(templesToBeDisplayed) {
         const card = document.createElement("figure");
 
         card.innerHTML = `
-            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy" decoding="async" style="height:230px; width:370px;">
+            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy" style="height:215px; width:340px;">
 
             <figcaption>
                 <h2>${temple.templeName}</h2>
