@@ -29,14 +29,6 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
   },
   {
-    templeName: "Payson Utah",
-    location: "Payson, Utah, United States",
-    dedicated: "2015, June, 7",
-    area: 96630,
-    imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
-  },
-  {
     templeName: "Yigo Guam",
     location: "Yigo, Guam",
     dedicated: "2020, May, 2",
@@ -84,6 +76,14 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/taipei-taiwan/400x250/taipei-taiwan-temple-lds-1031625-wallpaper.jpg"
   },
+  {
+    templeName: "Belém Brazil",
+    location: "Belém, Brazil",
+    dedicated: "2019, August, 17",
+    area: 28675,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/belem-brazil/400x250/belem_brazil_temple_exterior.jpg"
+  }
 ]
 /* -------------------------------------- */
 const templeContainer = document.querySelector(".temple-images");
@@ -97,7 +97,7 @@ function displayTemples(templesToBeDisplayed) {
         const card = document.createElement("figure");
 
         card.innerHTML = `
-            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy" style="height:215px; width:340px;">
+            <img src="${temple.imageUrl}" width="340" height="215" alt="${temple.templeName}" loading="lazy" decoding="async">
 
             <figcaption>
                 <h2>${temple.templeName}</h2>
