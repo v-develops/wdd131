@@ -29,6 +29,14 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
   },
   {
+    templeName: "Payson Utah",
+    location: "Payson, Utah, United States",
+    dedicated: "2015, June, 7",
+    area: 96630,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/2018/400x250/Payson-Utah-Temple02.jpg"
+  },
+  {
     templeName: "Yigo Guam",
     location: "Yigo, Guam",
     dedicated: "2020, May, 2",
