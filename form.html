@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form page</title>
+
+    <meta name="description" content="A form page that shows a form with different input types, and it is responsive for larger and smaller screens.">
+    <meta name="author" content="victor caputo cerillo andrade">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+
+            <fieldset>
+                <label>Product Name<select name="product" id="product" required>
+                        <option value="" disabled selected>Choose a Product ...</option>
+                        
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <label><input type="radio" id="rating-1" name="rating" value="1" required>★</label>
+                <label><input type="radio" id="rating-2" name="rating" value="2" required>★★</label>
+                <label><input type="radio" id="rating-3" name="rating" value="3" required>★★★</label>
+                <label><input type="radio" id="rating-4" name="rating" value="4" required>★★★★</label>
+                <label><input type="radio" id="rating-5" name="rating" value="5" required>★★★★★</label>
+            </fieldset>
+
+            <fieldset>
+                <label>Date of Installation<input type="date" id="installation" name="installation" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Wich features did you find useful in the product?</legend>
+                <p>Check all that apply</p>
+                <label><input type="checkbox" id="durability" name="feature" value="durability"> Durability</label>
+                <label><input type="checkbox" id="ease-of-use" name="feature" value="ease-of-use"> Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="feature" value="performance"> Performance</label>
+                <label><input type="checkbox" id="design" name="feature" value="design"> Design</label>
+            </fieldset>
+
+            <fieldset>
+                <label>Written Review<textarea name="review" id="review"></textarea></label>
+            </fieldset>
+
+            <fieldset>
+                <label>Your Name<input type="text" id="username" name="username"></label>
+            </fieldset>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>©<span id="current-year"></span> ✧ Victor Caputo Cerillo Andrade ✧ Brazil</p>
+        <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

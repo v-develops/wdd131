@@ -1,0 +1,87 @@
+/* -------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #005600;
+    --secondary-color: #c2d8c2;
+    --text-color-one: #ffffff;
+
+}
+body {
+    font-family: Arial, sans-serif;
+}
+/* -------------------------------------- */
+header {
+    background-color: var(--primary-color);
+}
+h1 {
+    text-align: center;
+    color: var(--text-color-one);
+    font-size: 4rem;
+    padding: 2rem;
+}
+/* -------------------------------------- */
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+form {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+label,
+legend {
+    font-weight: bold;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+    border: 1px solid #aaa;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+fieldset label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* -------------------------------------- */
+footer {
+    background-color: var(--primary-color);
+
+    text-align: center;
+    color: var(--text-color-one);
+    font-size: 2rem;
+    padding: 2rem;
+}
+/* -------------------------------------- */
