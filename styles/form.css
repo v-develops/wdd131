@@ -76,6 +76,14 @@ input[type="submit"] {
     cursor: pointer;
 }
 /* -------------------------------------- */
+.review-section {
+    text-align: center;
+
+    background-color: var(--secondary-color);
+    padding: 10rem 1rem 10rem 1rem;
+    border-radius: 5px;
+}
+/* -------------------------------------- */
 footer {
     background-color: var(--primary-color);
 
