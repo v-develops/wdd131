@@ -34,14 +34,16 @@ const products = [
 /* -------------------------------------- */
 const productSelect = document.querySelector("#product");
 
-products.forEach(product => {
-    const option = document.createElement("option");
+if (productSelect) {
+    products.forEach(product => {
+        const option = document.createElement("option");
 
-    option.value = product.id;
-    option.textContent = product.name;
+        option.value = product.id;
+        option.textContent = product.name;
 
-    productSelect.appendChild(option);
-});
+        productSelect.appendChild(option);
+    });
+}
 /* -------------------------------------- */
 const reviewCountElement = document.querySelector("#reviewCount");
 
