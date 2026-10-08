@@ -1,0 +1,10 @@
+@media screen and (min-width: 480px) {
+    #logo-link img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    }
+    #menu {
+    display: none;
+    }
+}
