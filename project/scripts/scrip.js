@@ -7,3 +7,8 @@ hambuttom.addEventListener('click', () => {
     hambuttom.classList.toggle('show');
 });
 /* -------------------------------------- */
+const currentYear = new Date().getFullYear();
+document.querySelector("#current-year").textContent = currentYear;
+
+document.getElementById("lastModified").textContent = document.lastModified;
+/* -------------------------------------- */

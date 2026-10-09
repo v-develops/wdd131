@@ -11,12 +11,14 @@
 
     /*Special effect colors*/
     --text-glow-color-one: #ffd98d;
+    --shadow-effect : #585858;
 }
 body {
     color: var(--text-color-one);
+    background-color: black;
 }
 /* -------------------------------------- */
-/* Overall Header */
+/*Overall Header*/
 header{
     background-color: var(--primary-color);
 
@@ -37,7 +39,7 @@ h1 {
     padding-bottom: 0.5rem;
 }
 /* -------------------------------------- */
-/* Hamburguer Menu */
+/*Hamburguer Menu*/
 #menu {
     color: var(--text-color-one);
     font-size: 2.5rem;
@@ -83,7 +85,7 @@ nav a:hover,
     text-shadow: 0 0 1.5rem var(--text-glow-color-one);
 }
 /* -------------------------------------- */
-/* Overall Main - Intro */
+/*Overall Main - Intro*/
 main {
     text-align: center;
 
@@ -98,19 +100,73 @@ h2 {
 h3 {
     font-size: 0.8rem;
 
-    padding: 2rem 0 0.2rem 0;
+    padding: 2rem 0 0.4rem 0;
     margin: 0 4rem 0 4rem;
 }
-p {
+main p {
     font-size: 0.5rem;
 
     padding: 1rem;
     margin: 0 1rem 0 1rem;
+
+    background-color: var(--primary-color);
+
+    border-radius: 2rem;
 }
 /* -------------------------------------- */
-/* Start exploring */
-.start-exploring figure img {
+/*Start exploring*/
+.start-exploring {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 0.4rem;
+
+    padding-top: 0.8rem;
+    margin: 0.4rem;
+}
+.start-exploring img {
     width: 87px;
     height: 87px;
+
+    border: 4px solid var(--text-color-one);
+    border-radius: 0.2rem;
+}
+.start-exploring img:hover {
+    border-color: var(--text-glow-color-one);
+    box-shadow: 0 0 0.5rem var(--text-glow-color-one);
+}
+.start-exploring figcaption {
+    font-size: 0.5rem;
 }
 /* -------------------------------------- */
+/*Object of the day*/
+.object-of-the-day {
+    padding-top: 0.8rem;
+    margin: 0.4rem;
+}
+.object-of-the-day img {
+    width: 125px;
+    height: 125px;
+
+    border: 4px solid var(--text-color-one);
+    border-radius: 0.2rem;
+}
+/* -------------------------------------- */
+footer {
+    background-color: var(--primary-color);
+
+    width: 100%;
+    height: auto;
+
+    text-align: center;
+
+    border-radius: 2rem 2rem 0 0;
+
+    padding: 0.6rem;
+}
+footer p {
+    font-size: 0.4rem;
+}
+.footer-links {
+    list-style: none;
+}
