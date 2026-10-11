@@ -17,6 +17,7 @@
 }
 body {
     color: var(--text-color-one);
+    background-color: black;
 
     font-family: "Roboto", sans-serif;;
 
