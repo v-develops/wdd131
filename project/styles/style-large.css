@@ -1,10 +1,155 @@
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
+    /* INDEX PAGE AND OVERALL STYLE */
+    /* -------------------------------------- */
+    /*Overall Header*/
+    header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    width: 100%;
+    padding: 1.5rem 2rem 0;
+
+    background-color: var(--primary-color-transparent);
+    border-radius: 0 0 3rem 3rem;
+    }
     #logo-link img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
+        display: block;
+        width: 350px;
+        height: 350px;
+        object-fit: contain;
+        margin: 0 auto;
     }
+    header h1 {
+        font-size: clamp(2rem, 4vw, 3.5rem);
+        padding: 0.5rem 1rem;
+        text-align: center;
+    }
+    /* -------------------------------------- */
     #menu {
-    display: none;
+        display: none;
     }
+    header nav {
+        width: 100%;
+    }
+    header .navigation {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        justify-content: center;
+
+        align-items: center;
+        gap: 0.5rem 1.5rem;
+        
+        padding: 0.5rem 1rem 1rem;
+    }
+    header .navigation li {
+        display: block;
+    }
+    header nav a {
+        display: block;
+
+        padding: 0.75rem 1rem;
+
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    /* -------------------------------------- */
+    /*Overall Main - Intro*/
+    main {
+        margin: 8rem 0 8rem 0;
+    }
+    h2 {
+        font-size: 2.6rem;
+
+        padding: 4rem 0 0.8rem 0;
+    }
+    h3 {
+        font-size: 2.2rem;
+
+        padding: 6rem 0 0.8rem 0;
+    }
+    main p {
+        font-size: 1.4rem;
+
+        padding: 4rem;
+        margin: 0 4rem 0 4rem;
+
+        border-radius: 8rem;
+    }
+    /* -------------------------------------- */
+    /*Footer*/
+    footer {
+        border-radius: 8rem 8rem 0 0;
+
+        padding: 2rem;
+    }
+    footer p {
+        font-size: 1.4rem;
+    }
+    footer nav a {
+        font-size: 1.6rem;
+    }
+    /* -------------------------------------- */
+
+    /* STARGAZING PAGE */
+    /* -------------------------------------- */
+    .stargazing-intro {
+        max-width: 900px;
+    }
+
+    .object-selector {
+        padding: 2rem;
+    }
+
+    .object-information {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+    }
+
+    .object-card img {
+        height: 500px;
+    }
+
+    .object-card-content {
+        padding: 1.5rem;
+    }
+
+    .object-card-content h4 {
+        font-size: 1.6rem;
+    }
+
+    .object-card-content p {
+        font-size: 1.1rem;
+    }
+
+    .favorite-button {
+        font-size: 1rem;
+    }
+    /* -------------------------------------- */
+
+    /* CONTACT FORM */
+    /* -------------------------------------- */
+    main form {
+    width: min(100% - 3rem, 750px);
+    padding: 2.5rem;
+    gap: 1.5rem;
+    }
+
+    main form label {
+        font-size: 1.1rem;
+    }
+
+    main form textarea {
+        min-height: 220px;
+    }
+
+    main form input[type="submit"] {
+        width: auto;
+        min-width: 180px;
+        align-self: flex-start;
+    }
+    /* -------------------------------------- */
 }
