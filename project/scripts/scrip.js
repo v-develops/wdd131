@@ -228,7 +228,7 @@ function displayFavoriteObjects() {
                 <h4>${object.name}</h4>
                 <p><strong>Category:</strong> ${object.type}</p>
                 <p><strong>Difficulty:</strong> ${object.difficulty}</p>
-                p><strong>Number of Moons:</strong> ${object.moons}</p>
+                <p><strong>Number of Moons:</strong> ${object.moons}</p>
                 <p><strong>Ring System:</strong> ${object.rings}</p>
                 <p>${object.description}</p>
 
